@@ -23,6 +23,22 @@
   grid-template: 1fr 1fr / 6fr 1fr 2fr;
 }
 
+.search > form {
+  display: grid;
+  grid-template-columns: 25px 1fr;
+  gap: 10px;
+}
+
+.search-bar {
+  background-color: #E2E8F0;
+  border: none;
+  width: 90%;
+  border-radius: 20px;
+  padding: 3px 10px;
+  line-height: 1.5;
+  flex-grow: 1;
+}
+
 .sidebar {
   background-color: #3492D4;
   color: #FFF;
