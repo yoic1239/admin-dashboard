@@ -39,6 +39,31 @@
   flex-grow: 1;
 }
 
+.header > .buttons {
+  grid-column: 2 / -1;
+
+  display: grid;
+  grid-column: repeat(3, 1fr);
+}
+
+.buttons ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  list-style-type: none;
+  gap: 15px;
+  align-items: center;
+  text-align: center;
+}
+
+.buttons ul li button {
+  border: none;
+  background-color: #3492D4;
+  color: #FFF;
+  padding-block: 0.5rem;
+  border-radius: 50px;
+  width: 100%;
+}
+
 .sidebar {
   background-color: #3492D4;
   color: #FFF;
