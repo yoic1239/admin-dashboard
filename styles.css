@@ -39,6 +39,15 @@
   flex-grow: 1;
 }
 
+.notice {
+  justify-self: end;
+}
+
+.notice button {
+  border: none;
+  background: none;
+}
+
 .header > .buttons {
   grid-column: 2 / -1;
 
