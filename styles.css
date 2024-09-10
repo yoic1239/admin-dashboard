@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 5fr;
+  background-color: #E2E8F0;
+  gap: 5px 0;
+}
+
+.header {
+  background-color: #FFF;
+  grid-column: 2;
+  box-shadow: 0 5px 5px #ddd;
+  padding: 2% 3%;
+
+  display: grid;
+  grid-template: 1fr 1fr / 6fr 1fr 2fr;
+}
+
+.sidebar {
+  background-color: #3492D4;
+  color: #FFF;
+  box-shadow: 1px 0 5px #E4E4E4;
+  grid-row: 1 / -1;
+  font-weight: bold;
+}
