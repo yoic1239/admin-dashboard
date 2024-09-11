@@ -197,7 +197,7 @@ li.nav-item:not(:last-child) {
 
 .card > .project-description {
   color: #919191;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 .card-buttons > ul {
@@ -208,7 +208,7 @@ li.nav-item:not(:last-child) {
   gap: 15px;
 }
 
-.announcement {
+.announcement, .trending {
   display: grid;
   grid-template-rows: min-content 1fr;
   gap: 10px;
@@ -241,4 +241,42 @@ li.nav-item:not(:last-child) {
 .announcement-detail {
   color: #919191;
   font-size: 0.8rem;
+}
+
+.trending-card {
+  background-color: #FFF;
+  border-radius: 5px;
+  box-shadow: 0 5px 5px #ddd;
+  padding: 5px 20px;
+
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.trending .user-icon img {
+  width: 50px;
+  border-radius: 25px;
+}
+
+.trending-ac {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  gap: 10px;
+  align-items: center;
+}
+
+.user-icon {
+  display: grid;
+}
+
+.user-ac {
+  font-size: 0.9rem;
+}
+
+.ac-name {
+  display: block;
+}
+
+.ac-description {
+  color: #919191;
 }
