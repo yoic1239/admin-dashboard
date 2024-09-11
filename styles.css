@@ -57,7 +57,7 @@
   font-weight: bold;
 }
 
-.user-icon {
+.user-info .user-icon {
   justify-self: right;
 }
 
@@ -66,7 +66,28 @@
   border-radius: 18px;
 }
 
-.header > .buttons {
+.greeting {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  gap: 15px;
+  align-items: start;
+  font-weight: bold;
+}
+
+.greeting .user-icon img {
+  width: 50px;
+  border-radius: 25px;
+}
+
+.greeting-msg span {
+  font-size: 0.8rem;
+}
+
+.greeting-msg div {
+  font-size: 1.2rem;;
+}
+
+.buttons {
   grid-column: 2 / -1;
 
   display: grid;
