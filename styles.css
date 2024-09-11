@@ -8,6 +8,10 @@ body {
   background-color: #E2E8F0;
 }
 
+ul {
+  list-style: none;
+}
+
 .container {
   display: grid;
   height: 100vh;
@@ -100,7 +104,6 @@ body {
 .buttons ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  list-style-type: none;
   gap: 15px;
   align-items: center;
   text-align: center;
@@ -136,17 +139,13 @@ span:has(svg) {
 }
 
 .branding {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 .branding, .nav-item {
   display: flex;
   align-items: center;
   gap: 10px;
-}
-
-.navigation ul {
-  list-style: none;
 }
 
 li.nav-item:not(:last-child) {
@@ -168,7 +167,7 @@ li.nav-item:not(:last-child) {
   gap: 10px;
 }
 
-.section-title {
+.section-title, .project-title, .announcement-title {
   font-weight: bold;
 }
 
@@ -191,17 +190,12 @@ li.nav-item:not(:last-child) {
   gap: 5px;
 }
 
-.card > .project-title {
-  font-weight: bold;
-}
-
 .card > .project-description {
   color: #919191;
   font-size: 0.9rem;
 }
 
 .card-buttons > ul {
-  list-style: none;
   display: grid;
   grid-template-columns: repeat(3, min-content);
   justify-content: right;
@@ -234,7 +228,6 @@ li.nav-item:not(:last-child) {
 
 .announcement-title {
   font-size: 0.9rem;
-  font-weight: bold;
   margin-bottom: 3px;
 }
 
