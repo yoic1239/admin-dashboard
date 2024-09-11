@@ -117,5 +117,35 @@
   color: #FFF;
   box-shadow: 1px 0 5px #E4E4E4;
   grid-row: 1 / -1;
+  font-size: 1.2rem;
   font-weight: bold;
+  padding: 15px;
+
+  display: grid;
+  grid-template-rows: repeat(3, min-content);
+  gap: 30px;
+}
+
+span:has(svg) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.branding {
+  font-size: 24px;
+}
+
+.branding, .nav-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navigation ul {
+  list-style: none;
+}
+
+li.nav-item:not(:last-child) {
+  margin-bottom: 5px;
 }
