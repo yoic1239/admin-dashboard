@@ -4,12 +4,15 @@
   padding: 0;
 }
 
+body {
+  background-color: #E2E8F0;
+}
+
 .container {
   display: grid;
   height: 100vh;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 1fr 5fr;
-  background-color: #E2E8F0;
   gap: 5px 0;
 }
 
@@ -152,10 +155,10 @@ li.nav-item:not(:last-child) {
 
 .main-content {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 3fr 1fr;
   grid-template-rows: 1fr 1fr;
   padding: 15px 30px;
-  gap: 15px;
+  gap: 20px;
 }
 
 .projects {
@@ -203,4 +206,39 @@ li.nav-item:not(:last-child) {
   grid-template-columns: repeat(3, min-content);
   justify-content: right;
   gap: 15px;
+}
+
+.announcement {
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  gap: 10px;
+}
+
+.annoucement-card {
+  background-color: #FFF;
+  border-radius: 5px;
+  box-shadow: 0 5px 5px #ddd;
+  padding: 5px 20px;
+
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.announcement-info {
+  padding: 15px 10px;
+}
+
+.announcement-info:not(:last-child) {
+  border-bottom: 1px solid #D2D2D2;
+}
+
+.announcement-title {
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+.announcement-detail {
+  color: #919191;
+  font-size: 0.8rem;
 }
