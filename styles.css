@@ -149,3 +149,58 @@ span:has(svg) {
 li.nav-item:not(:last-child) {
   margin-bottom: 5px;
 }
+
+.main-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 15px 30px;
+  gap: 15px;
+}
+
+.projects {
+  grid-row: 1 / -1;
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  gap: 10px;
+}
+
+.section-title {
+  font-weight: bold;
+}
+
+.project-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background-color: #FFF;
+  border-radius: 5px;
+  box-shadow: 0 5px 5px #ddd;
+  border-left: 10px solid #F0B442;
+  padding: 25px 20px;
+
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  gap: 5px;
+}
+
+.card > .project-title {
+  font-weight: bold;
+}
+
+.card > .project-description {
+  color: #919191;
+  font-size: 0.8rem;
+}
+
+.card-buttons > ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, min-content);
+  justify-content: right;
+  gap: 15px;
+}
